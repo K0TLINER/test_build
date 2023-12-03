@@ -17,9 +17,9 @@ public class SecurityConfig {
 
         http.formLogin().disable();
 
-        http
-                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
-                .authorizeRequests(authorize -> authorize.anyRequest().permitAll());
+//        http
+//                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
+//                .authorizeRequests(authorize -> authorize.anyRequest().permitAll());
 
         return http.build();
     }

@@ -16,4 +16,9 @@ public class TestController {
     public String postTest() {
         return "PPOST";
     }
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String helloTest() {
+        return "HELLO";
+    }
 }
